@@ -23,7 +23,7 @@ func main() {
 	f := "This is F var"
 	fmt.Println(f)
 
-
-
-
+	// 这样也是可以的
+	var1, var2 := 2, 4
+	fmt.Println(var1, var2)
 }
