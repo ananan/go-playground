@@ -6,7 +6,7 @@ type ExpandController struct {
 	beego.Controller
 }
 
-func (self *ExpandController) Get()  {
+func (self *ExpandController) Get() {
 	var result ShortResult
 	shorturl := self.Input().Get("shorturl")
 	result.UrlShort = shorturl

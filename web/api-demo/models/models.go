@@ -37,7 +37,7 @@ func Generate() (tiny string) {
 		runes = append(runes, a[num%62])
 		num = num / 62
 		for num >= 1 {
-			if num <62 {
+			if num < 62 {
 				runes = append(runes, a[num-1])
 			} else {
 				runes = append(runes, a[num%62])
@@ -53,8 +53,8 @@ func Generate() (tiny string) {
 	return tiny
 }
 
-func getRange(start, end rune) (ran []rune)  {
-	for i := start; i <= end; i++{
+func getRange(start, end rune) (ran []rune) {
+	for i := start; i <= end; i++ {
 		ran = append(ran, i)
 	}
 	return ran

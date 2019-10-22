@@ -6,6 +6,6 @@ type MainController struct {
 	beego.Controller
 }
 
-func (self *MainController) Get()  {
+func (self *MainController) Get() {
 	self.Ctx.Output.Body([]byte("hello short-url"))
 }
