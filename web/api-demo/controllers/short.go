@@ -11,7 +11,7 @@ var urlcache cache.Cache
 
 func init() {
 	urlcache, _ = cache.NewCache("memory",
-								`{"interval": 0`)
+		`{"interval": 0`)
 }
 
 type ShortResult struct {
@@ -23,7 +23,7 @@ type ShortController struct {
 	beego.Controller
 }
 
-func (self *ShortController) Get()  {
+func (self *ShortController) Get() {
 	var result ShortResult
 	longurl := self.Input().Get("longurl")
 	result.UrlLong = longurl
